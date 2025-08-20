@@ -2,8 +2,8 @@ import { motion } from "motion/react"
 import ExcalidrawCard from "./card-quem-somos"
 import { useMotion } from "@/hooks/use-motion"
 
-import DiagramaQuemSomosSVG from "@/assets//excalidraw-diagrams/diagrama-quem-somos.svg"
 import ProvaSocial6PNG from "@/assets/prova-social-6.png"
+import DiagramaQuemSomosSketch from "@/assets/motions/diagram-quem-somos-sketch"
 
 
 export function AboutUsSection() {
@@ -15,7 +15,7 @@ export function AboutUsSection() {
             variants={inViewContainer}
             initial="hidden"
             whileInView="show"
-            viewport={{ amount: 0.35 }}
+            viewport={{ once: false, amount: 0.35 }}
         >
             <div className="text-3xl font-bold sm:text-4xl text-start  relative font-excalidraw">
                 Quem somos
@@ -23,9 +23,9 @@ export function AboutUsSection() {
                     Um pouco sobre nossa missão e visão
                 </motion.p>
             </div>
-            <motion.img src={DiagramaQuemSomosSVG} alt="Placeholder" className="w-[600px] -z-30" variants={rise} />
+            <DiagramaQuemSomosSketch className="w-[600px] -z-30" />
 
-            <motion.div className="absolute top-0 right-20" variants={popCard}>
+            <motion.div className="absolute top-0 right-20" variants={popCard} custom={3}>
                 <ExcalidrawCard imageSrc={ProvaSocial6PNG} alt="Texto institucional" />
             </motion.div>
         </motion.section>

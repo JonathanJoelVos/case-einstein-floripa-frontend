@@ -3,8 +3,8 @@ import { motion } from "framer-motion"
 import { Button } from "./ui/button"
 import { socialLinks } from "@/config/config-app"
 
-import VagasAbertasSVG from "@/assets/excalidraw-diagrams/vagas-abertas.svg"
 import LogoSVG from "@/assets/logo.svg"
+import VagasAbertasSketch from "@/assets/motions/vagas-abertas-sketch"
 
 export function Hero() {
     const { container, fadeUp } = useMotion()
@@ -18,7 +18,7 @@ export function Hero() {
         >
             <img src={LogoSVG} alt="Logo" className="dark:invert w-40" />
             <motion.h1 className="z-30 max-w-3xl text-center text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl relative" variants={fadeUp}>
-                <img src={VagasAbertasSVG} alt="Placeholder" className="absolute -left-72 -top-36 w-72 dark:invert -z-10" />
+                <VagasAbertasSketch className="absolute -left-72 -top-36 w-72 dark:invert -z-10" />
                 <span>
                     Junte-se a nós e transforme o futuro de aluno para aluno
                 </span>

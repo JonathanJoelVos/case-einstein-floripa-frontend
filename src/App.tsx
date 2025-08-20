@@ -2,7 +2,6 @@ import { Header } from "./components/header"
 import { MomentsSection } from "./components/moments-section"
 
 import { Hero } from "./components/hero"
-import SpoilerAlertSVG from "@/assets/excalidraw-diagrams/alerta-spoiler.svg"
 import ProvaSocial1PNG from "@/assets/prova-social-1.png"
 import ProvaSocial2PNG from "@/assets/prova-social-2.png"
 import ProvaSocial3PNG from "@/assets/prova-social-3.png"
@@ -10,6 +9,7 @@ import ProvaSocial4PNG from "@/assets/prova-social-4.png"
 import ProvaSocial5PNG from "@/assets/prova-social-5.png"
 import ProvaSocial6PNG from "@/assets/prova-social-6.png"
 import { AboutUsSection } from "./components/about-us-section"
+import AlertaSpoilerSketch from "./assets/motions/alerta-spoiler-sketch"
 
 const photos = [
   ProvaSocial1PNG,
@@ -31,7 +31,7 @@ export default function App() {
         </div>
         <div className="px-8">
           <div className="flex flex-col">
-            <img src={SpoilerAlertSVG} alt="Placeholder" className="w-40 self-center" />
+            <AlertaSpoilerSketch className="w-40 self-center" />
             <MomentsSection
               images={photos}
               topOffsetPx={96}
