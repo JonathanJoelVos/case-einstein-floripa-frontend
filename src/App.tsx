@@ -11,6 +11,7 @@ import ProvaSocial6PNG from "@/assets/prova-social-6.png"
 import { AboutUsSection } from "./components/about-us-section"
 import AlertaSpoilerSketch from "./assets/motions/alerta-spoiler-sketch"
 import ImpactMetricsSection from "./components/impact-metrics-section"
+import { TestimonialsSection } from "./components/testimonials-section"
 
 const photos = [
   ProvaSocial1PNG,
@@ -42,6 +43,7 @@ export default function App() {
         </div>
         <AboutUsSection />
         <ImpactMetricsSection />
+        <TestimonialsSection />
       </div>
     </main>
   )

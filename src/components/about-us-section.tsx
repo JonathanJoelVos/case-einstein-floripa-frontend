@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import ExcalidrawCard from "./card-quem-somos"
+import ExcalidrawCard from "./excalidraw-card"
 import { useMotion } from "@/hooks/use-motion"
 
 import ProvaSocial6PNG from "@/assets/prova-social-6.png"

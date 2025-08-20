@@ -36,7 +36,7 @@ export default function ExcalidrawCard({ imageSrc, alt = "Imagem" }: Props) {
                 </div>
 
                 <CardContent className="p-6">
-                    <div className="prose prose-neutral max-w-none text-start md:prose-lg">
+                    <div className="prose prose-neutral max-w-none text-start md:prose-lg text-sm">
                         <p className="font-semibold text-slate-800">
                             Somos constituídos de uma equipe repleta de universitários determinados, imersos numa
                             experiência de constante aprendizado, ampliando suas possibilidades pessoais e profissionais.
