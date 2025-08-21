@@ -1,17 +1,18 @@
-import { Header } from "./components/header"
-import { MomentsSection } from "./components/moments-section"
+import { Header } from "@/components/header"
+import { MomentsSection } from "@/components/moments-section"
 
-import { Hero } from "./components/hero"
+import { Hero } from "@/components/hero"
 import ProvaSocial1PNG from "@/assets/prova-social-1.png"
 import ProvaSocial2PNG from "@/assets/prova-social-2.png"
 import ProvaSocial3PNG from "@/assets/prova-social-3.png"
 import ProvaSocial4PNG from "@/assets/prova-social-4.png"
 import ProvaSocial5PNG from "@/assets/prova-social-5.png"
 import ProvaSocial6PNG from "@/assets/prova-social-6.png"
-import { AboutUsSection } from "./components/about-us-section"
-import AlertaSpoilerSketch from "./assets/motions/alerta-spoiler-sketch"
-import ImpactMetricsSection from "./components/impact-metrics-section"
-import { TestimonialsSection } from "./components/testimonials-section"
+import { AboutUsSection } from "@/components/about-us-section"
+import AlertaSpoilerSketch from "@/assets/motions/alerta-spoiler-sketch"
+import ImpactMetricsSection from "@/components/impact-metrics-section"
+import { TestimonialsSection } from "@/components/testimonials-section"
+import Footer from "@/components/footer"
 
 const photos = [
   ProvaSocial1PNG,
@@ -45,6 +46,7 @@ export default function App() {
         <ImpactMetricsSection />
         <TestimonialsSection />
       </div>
+      <Footer />
     </main>
   )
 }
