@@ -45,10 +45,10 @@ export default function VagasAbertasSketch({ className }: VagasAbertasSketchProp
                         height: "100%",
                         fontFamily: "Patrick Hand, Caveat, ui-sans-serif",
                         fontSize: 18,
-                        lineHeight: 1,
+                        lineHeight: 1.5,
                     }}
                 >
-                    vagas abertas! 🥳
+                    tudo começa aqui! 😁
                 </div>
             </motion.foreignObject>
 

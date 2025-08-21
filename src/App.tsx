@@ -13,6 +13,7 @@ import AlertaSpoilerSketch from "@/assets/motions/alerta-spoiler-sketch"
 import ImpactMetricsSection from "@/components/impact-metrics-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import Footer from "@/components/footer"
+import UploadCVSection from "./components/upload-cv-section"
 
 const photos = [
   ProvaSocial1PNG,
@@ -45,6 +46,7 @@ export default function App() {
         <AboutUsSection />
         <ImpactMetricsSection />
         <TestimonialsSection />
+        <UploadCVSection />
       </div>
       <Footer />
     </main>
