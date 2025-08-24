@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button"
-import { Loader2, Upload, FileText, CheckCircle2, X } from "lucide-react"
-import ArrowSvg from "@/assets/arrow2.svg"
-import { ScribbleBackground } from "./scribble-background"
 import { useRef, type ChangeEvent, type RefObject, type DragEvent as ReactDragEvent } from "react"
-import type { StatusUploadCV } from "@/hooks/use-upload-cv"
+import { Loader2, Upload, FileText, CheckCircle2, X } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import type { StatusUploadCV } from "@/routes/landing-page/hooks/use-upload-cv"
+import { ScribbleBackground } from "./scribble-background"
 import { fmtBytes } from "../utils/fmt-bytes"
+import ArrowSvg from "@/routes/landing-page/assets/arrow2.svg"
 
 interface DropzoneCVProps {
     file: File | null

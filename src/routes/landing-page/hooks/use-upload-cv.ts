@@ -1,4 +1,4 @@
-import { validateCVFile } from "@/components/upload-cv-section/utils/validate-cv-file"
+import { validateCVFile } from "@/routes/landing-page/components/upload-cv-section/utils/validate-cv-file"
 import { useState, type RefObject } from "react"
 
 

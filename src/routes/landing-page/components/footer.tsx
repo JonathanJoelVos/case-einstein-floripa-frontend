@@ -2,12 +2,10 @@ import {
     Facebook, Instagram, Youtube, ChevronRight,
 } from "lucide-react"
 import LogoSvg from "@/assets/logo.svg"
-import OndeNosAcharSVG from "@/assets/onde-nos-achar.svg"
 
-export default function Footer() {
+export function Footer() {
     return (
         <footer className="relative bg-blue-300 py-16 text-white flex items-center gap-1 justify-center">
-            <img src={OndeNosAcharSVG} alt="Onde nos achar" className="w-72 opacity-40 mt-20 -ml-72" />
             <div className="max-w-7xl">
                 <div className="relative overflow-hidden rounded-3xl bg-[#408AD5] border-2 border-white">
                     <ScribbleTexture />

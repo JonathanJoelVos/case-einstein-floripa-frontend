@@ -1,4 +1,4 @@
-import { CountUp } from "../count-up";
+import { CountUp } from "@/components/ui/count-up";
 
 interface ImpactMetricsBlockProps {
     end: number;

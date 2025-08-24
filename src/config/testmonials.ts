@@ -1,6 +1,6 @@
-import CarolTestimonialPNG from "@/assets/testimonial/carol.png"
-import SindyTestimonialPNG from "@/assets/testimonial/sindy.png"
-import EvelynTestimonialPNG from "@/assets/testimonial/evelyn.png"
+import CarolTestimonialPNG from "@/routes/landing-page/assets/testimonial/carol.png"
+import SindyTestimonialPNG from "@/routes/landing-page/assets/testimonial/sindy.png"
+import EvelynTestimonialPNG from "@/routes/landing-page/assets/testimonial/evelyn.png"
 
 type Testimonial = {
     name: string

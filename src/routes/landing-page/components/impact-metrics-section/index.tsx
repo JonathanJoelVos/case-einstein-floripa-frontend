@@ -15,7 +15,7 @@ const bottomRow = [
     { end: 45000, label: "horas trabalhadas", compact: true },
 ]
 
-export default function ImpactMetricsSection() {
+export function ImpactMetricsSection() {
     const { inViewContainer, rise } = useMotion()
 
     return (

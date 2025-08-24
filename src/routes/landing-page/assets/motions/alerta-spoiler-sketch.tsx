@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 type AlertaSpoilerSketchProps = { className?: string }
 
-export default function AlertaSpoilerSketch({ className }: AlertaSpoilerSketchProps) {
+export function AlertaSpoilerSketch({ className }: AlertaSpoilerSketchProps) {
     const { draw, textReveal } = useMotion()
     const boxX = 10
     const boxY = 210.91093426043528

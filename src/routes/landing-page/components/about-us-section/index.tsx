@@ -1,9 +1,9 @@
 import { motion } from "motion/react"
-import ExcalidrawCard from "./excalidraw-card"
+import ExcalidrawCard from "../../../../components/ui/excalidraw-card"
 import { useMotion } from "@/hooks/use-motion"
 
-import ProvaSocial6PNG from "@/assets/prova-social-6.png"
-import DiagramaQuemSomosSketch from "@/assets/motions/diagram-quem-somos-sketch"
+import ProvaSocial6PNG from "@/routes/landing-page/assets/prova-social-6.png"
+import DiagramaQuemSomosSketch from "@/routes/landing-page/assets/motions/diagram-quem-somos-sketch"
 
 
 export function AboutUsSection() {

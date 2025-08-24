@@ -1,10 +1,10 @@
 import { useMotion } from "@/hooks/use-motion"
 import { motion } from "framer-motion"
-import { Button } from "./ui/button"
+import { Button } from "../../../components/ui/button"
 import { socialLinks } from "@/config/config-app"
 
 import LogoSVG from "@/assets/logo.svg"
-import VagasAbertasSketch from "@/assets/motions/vagas-abertas-sketch"
+import VagasAbertasSketch from "@/routes/landing-page/assets/motions/vagas-abertas-sketch"
 
 export function Hero() {
     const { container, fadeUp } = useMotion()

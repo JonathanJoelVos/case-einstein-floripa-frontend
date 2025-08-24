@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+import { Button } from "../../../components/ui/button";
 import { navItems } from "@/config/config-app";
 import { useMotion } from "@/hooks/use-motion";
 import { cn } from "@/lib/utils";

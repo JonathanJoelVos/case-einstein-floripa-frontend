@@ -9,7 +9,7 @@ import {
 import { Card } from "@/components/ui/card"
 import { useMotion } from "@/hooks/use-motion"
 
-import ArrowSVG from "@/assets/arrow.svg"
+import ArrowSVG from "@/routes/landing-page/assets/arrow.svg"
 import { BlobBg } from "./blob"
 import { TESTIMONIALS } from "@/config/testmonials"
 
