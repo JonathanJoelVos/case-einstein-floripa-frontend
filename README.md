@@ -24,7 +24,7 @@
 
 ---
 
-## Visão geral do produto
+## Visão geral do projeto
 
 * **Problema**: o Einstein abre seleções por janelas de 6 em 6 meses; fora desses períodos, quem quer participar não tem onde se candidatar e pode perder o engajamento até a abertura da próxima janela.
 * **Solução**:
@@ -34,6 +34,8 @@
   * Indicadores para dar visão: total de currículos, crescimento recente, média de score cultural e um recorte especial de **Docência / Ensinos** (Docência e Hogwarts), incluindo **padrões de co-ocorrência** com outras áreas.
 
 > A estética da landing aponta para “estudos/quadro/rascunho” (vibe *Excalidraw*), conectando com a essência do cursinho social Einstein. O dashboard é mais sóbrio, focado em eficiência e clareza.
+
+[![Assista ao vídeo](https://img.youtube.com/vi/UB-_5lRl6v4/hqdefault.jpg)](https://youtu.be/jg64qos43Do?si=3mVfrK75sBggW15R)
 
 ---
 
