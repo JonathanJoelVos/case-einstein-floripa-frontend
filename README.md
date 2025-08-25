@@ -8,6 +8,11 @@
 
 ---
 
+# Link para o site
+
+**Landing Page** https://case-einstein-floripa-frontend.vercel.app/landing-page
+**Dashboard** https://case-einstein-floripa-frontend.vercel.app/dashboard
+
 ## Sumário
 
 1. [Visão geral do produto](#visão-geral-do-produto)
