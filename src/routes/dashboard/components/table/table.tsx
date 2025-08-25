@@ -3,7 +3,7 @@ import { SortableContext, verticalListSortingStrategy } from "@dnd-kit/sortable"
 import { Table, TableHeader, TableHead, TableRow, TableBody, TableCell } from "@/components/ui/table"
 import { useReactTable, getCoreRowModel, flexRender } from "@tanstack/react-table"
 import { useAnalysesQuery } from "../../hooks/use-analyses-query"
-import type { Analysis } from "../../validation/schemas"
+import type { Analysis } from "../../types/analysis-type"
 import { columnsAnalyses } from "./columns"
 
 export function AnalysesTable() {

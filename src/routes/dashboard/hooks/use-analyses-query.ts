@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { type ListResponse } from "../validation/schemas";
+import { type ListResponse } from "../types/analysis-type";
 
 export function useAnalysesQuery(params?: { page?: number; perPage?: number }) {
     const [data, setData] = useState<ListResponse | null>(null)

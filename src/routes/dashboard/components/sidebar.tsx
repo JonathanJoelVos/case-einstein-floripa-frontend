@@ -1,7 +1,6 @@
-import * as React from "react"
 import { IconReport } from "@tabler/icons-react"
 
-import { NavDocuments } from "@/components/nav-documents"
+import { NavDocuments } from "@/routes/dashboard/components/nav-documents"
 
 import {
   Sidebar,
@@ -13,6 +12,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import LogoSVG from "@/assets/logo.svg"
+import type { ComponentProps } from "react"
 
 const data = {
   documents: [
@@ -24,7 +24,7 @@ const data = {
   ],
 }
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export function DashboardSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>

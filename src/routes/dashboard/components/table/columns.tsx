@@ -6,7 +6,7 @@ import {
     DrawerTitle, DrawerDescription, DrawerFooter, DrawerClose
 } from "@/components/ui/drawer"
 import { IconExternalLink, IconCircleCheckFilled } from "@tabler/icons-react"
-import type { Analysis } from "../../validation/schemas"
+import type { Analysis } from "../../types/analysis-type"
 import {
     Banknote, HeartHandshake, Cpu, Megaphone,
     GraduationCap, School, Tag, Link as LinkIcon

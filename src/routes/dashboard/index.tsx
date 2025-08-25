@@ -1,5 +1,5 @@
-import { AppSidebar } from "@/components/app-sidebar"
-import { SiteHeader } from "@/components/site-header"
+import { DashboardSidebar } from "@/routes/dashboard/components/sidebar"
+import { DashboardHeader } from "@/routes/dashboard/components/header"
 import {
     SidebarInset,
     SidebarProvider,
@@ -24,9 +24,9 @@ export default function DashboardPage() {
                 } as React.CSSProperties
             }
         >
-            <AppSidebar variant="inset" />
+            <DashboardSidebar variant="inset" />
             <SidebarInset>
-                <SiteHeader />
+                <DashboardHeader />
                 <div className="flex flex-1 flex-col">
                     <div className="@container/main flex flex-1 flex-col gap-2">
                         <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
