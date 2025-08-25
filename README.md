@@ -35,6 +35,7 @@
 
 > A estética da landing aponta para “estudos/quadro/rascunho” (vibe *Excalidraw*), conectando com a essência do cursinho social Einstein. O dashboard é mais sóbrio, focado em eficiência e clareza.
 
+## Vídeo do projeto
 [![Assista ao vídeo](https://img.youtube.com/vi/UB-_5lRl6v4/hqdefault.jpg)](https://youtu.be/jg64qos43Do?si=3mVfrK75sBggW15R)
 
 ---
