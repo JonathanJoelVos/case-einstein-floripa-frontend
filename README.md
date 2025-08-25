@@ -1,7 +1,7 @@
 
 ---
 
-# Einstein Floripa — Frontend (SPA)
+# Case Einstein Floripa — Frontend (SPA)
 
 > **Case — Opção 3 (Web)**
 > Landing para captação contínua de currículos + **painel de triagem com IA** para apoiar decisão (Docência, Tecnologia, Captação, Pessoas etc.).
@@ -93,6 +93,7 @@ src/
 ### Landing (`/landing-page`)
 
 **Para que serve**
+
 Canal permanente de **captação de currículos**. Mesmo fora de processos seletivos, quem quer participar envia seu CV — e não se perde o interesse de quem chega “no meio do caminho”.
 
 **Como foi pensada**
@@ -109,11 +110,13 @@ Canal permanente de **captação de currículos**. Mesmo fora de processos selet
 ### Dashboard (`/dashboard`)
 
 **O que é este painel**
+
 É a visão operacional da triagem. Aqui os currículos chegam **já analisados**: você vê rapidamente **quem é a pessoa**, **como ela se encaixa na cultura do Einstein**, **em quais áreas teria mais impacto** e **se já tem experiência real**.
 Além do detalhe individual, o painel agrega os dados para gerar **insights** úteis (volume, tendência recente, qualidade média e um recorte especial de **Docência / Ensinos**).
 
 **O que a IA faz de fato**
-Para cada CV enviado, a IA LLM (nesse caso o Gemini) é nutrida com informações da instituição (informações retiradas do site oficial), e a partir daí lê o documento e devolve:
+
+Para cada CV enviado, o modelo de LLM (nesse caso o Gemini) é nutrida com informações da instituição (informações retiradas do site oficial), e a partir daí lê o documento e devolve:
 
 * **Nome, e-mail e telefone** (quando detectáveis no arquivo).
 * **Áreas que o candidato mais se encaixa** (1 a 3) entre:
@@ -169,7 +172,7 @@ Para cada CV enviado, a IA LLM (nesse caso o Gemini) é nutrida com informaçõe
 **Requisitos**: Node **22.x**
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/JonathanJoelVos/case-einstein-floripa-frontend.git
 cd case-einstein-front
 npm i
 ```
