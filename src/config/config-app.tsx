@@ -20,22 +20,22 @@ export const socialLinks: {
     icon: ReactNode;
 }[] = [
         {
-            href: "https://twitter.com/cursinhofree",
+            href: "https://twitter.com/einsteinfloripa",
             label: "Twitter",
             icon: <Twitter className="h-5 w-5" />
         },
         {
-            href: "https://instagram.com/cursinhofree",
+            href: "https://www.instagram.com/einsteinfloripa/",
             label: "Instagram",
             icon: <Instagram className="h-5 w-5" />
         },
         {
-            href: "https://instagram.com/cursinhofree",
+            href: "https://github.com/Einstein-Floripa",
             label: "GitHub",
             icon: <Github className="h-5 w-5" />
         },
         {
-            href: "https://instagram.com/cursinhofree",
+            href: "https://www.linkedin.com/company/einstein-floripa-vestibulares/posts/?feedView=all",
             label: "LinkedIn",
             icon: <Linkedin className="h-5 w-5" />
         },
