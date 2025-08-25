@@ -4,6 +4,7 @@ import { useMotion } from "@/hooks/use-motion"
 import { useUploadCv } from "@/routes/landing-page/hooks/use-upload-cv"
 import { UploadCVSectionTitle } from "./components/section-title"
 import { DropzoneCV } from "./components/dropzone-cv"
+import { toast } from "sonner"
 
 export function UploadCVSection() {
     const { inViewContainer } = useMotion()
@@ -24,23 +25,37 @@ export function UploadCVSection() {
         try {
             const fd = new FormData()
             fd.append("cv", file)
-            await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/resumes/upload`, { method: "POST", body: fd })
+
+            const res = await fetch(
+                `${import.meta.env.VITE_API_BASE_URL}/api/resumes/upload`,
+                { method: "POST", body: fd }
+            )
+
+            if (!res.ok) {
+                let msg = "Erro ao enviar o currículo. Tente novamente em instantes."
+                try {
+                    const data = await res.json()
+                    if (data?.error) msg = String(data.error)
+                } catch {
+                    // nada
+                }
+                throw new Error(msg)
+            }
+
             updateStatus("success")
+            toast.success("Currículo enviado com sucesso!")
         } catch (err) {
             console.error(err)
             updateStatus("error")
+            toast.error("Erro ao enviar o currículo. Tente novamente em instantes.")
+            reset()
         }
     }
 
     return (
-        <section className="relative  dark:from-neutral-900 dark:to-neutral-950 py-24 bg-blue-200/20">
-            <motion.div
-                variants={inViewContainer}
-                className="mx-auto max-w-3xl px-6 text-center"
-            >
-                <UploadCVSectionTitle
-                    maxSizeMB={MAX_SIZE_MB}
-                />
+        <section className="relative dark:from-neutral-900 dark:to-neutral-950 py-24 bg-blue-200/20">
+            <motion.div variants={inViewContainer} className="mx-auto max-w-3xl px-6 text-center">
+                <UploadCVSectionTitle maxSizeMB={MAX_SIZE_MB} />
                 <DropzoneCV
                     file={file}
                     onDrop={onDrop}

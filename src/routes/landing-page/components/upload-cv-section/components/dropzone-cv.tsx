@@ -95,7 +95,7 @@ export function DropzoneCV({
                                                 className="rounded-full"
                                             >
                                                 {isUploading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                                                {isSuccess ? "Enviado!" : "Enviar currículo"}
+                                                {isSuccess ? "Enviado!" : isUploading ? "Enviando currículo" : "Enviar currículo"}
                                             </Button>
                                         )
                                     }

@@ -10,32 +10,42 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as LandingPageIndexRouteImport } from './routes/landing-page/index'
+import { Route as DashboardIndexRouteImport } from './routes/dashboard/index'
 
 const LandingPageIndexRoute = LandingPageIndexRouteImport.update({
   id: '/landing-page/',
   path: '/landing-page/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DashboardIndexRoute = DashboardIndexRouteImport.update({
+  id: '/dashboard/',
+  path: '/dashboard/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
+  '/dashboard': typeof DashboardIndexRoute
   '/landing-page': typeof LandingPageIndexRoute
 }
 export interface FileRoutesByTo {
+  '/dashboard': typeof DashboardIndexRoute
   '/landing-page': typeof LandingPageIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
+  '/dashboard/': typeof DashboardIndexRoute
   '/landing-page/': typeof LandingPageIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/landing-page'
+  fullPaths: '/dashboard' | '/landing-page'
   fileRoutesByTo: FileRoutesByTo
-  to: '/landing-page'
-  id: '__root__' | '/landing-page/'
+  to: '/dashboard' | '/landing-page'
+  id: '__root__' | '/dashboard/' | '/landing-page/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
+  DashboardIndexRoute: typeof DashboardIndexRoute
   LandingPageIndexRoute: typeof LandingPageIndexRoute
 }
 
@@ -48,10 +58,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LandingPageIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dashboard/': {
+      id: '/dashboard/'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
+  DashboardIndexRoute: DashboardIndexRoute,
   LandingPageIndexRoute: LandingPageIndexRoute,
 }
 export const routeTree = rootRouteImport
