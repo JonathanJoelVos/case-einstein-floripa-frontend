@@ -147,8 +147,6 @@ Para cada CV enviado, a IA LLM (nesse caso o Gemini) é nutrida com informaçõe
 
 ## O que esses dados permitem enxergar
 
-perfeito — aqui vai o trecho revisado para colar no README, agora com **por que cada indicador é útil**:
-
 * **Quantos currículos chegaram no período** e **evolução nos últimos 7 dias**
   *Por que importa:* dá visibilidade de **volume** e **tendência**. Ajuda a entender se campanhas/ações recentes estão funcionando, detectar sazonalidade e **planejar a carga de triagem** (mais voluntários quando o fluxo sobe).
 
